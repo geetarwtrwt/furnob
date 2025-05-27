@@ -1,14 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/app/component/Header";
+import Footer from "@/app/component/Footer";
+import { AppProvider } from "@/app/AppContext";
+import { Jost } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jostSans = Jost({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
@@ -19,10 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${jostSans.className} antialiased`}>
+        <AppProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );
