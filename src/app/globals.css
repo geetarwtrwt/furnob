@@ -4,7 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --main: #eb7700;
+  --mainBgLight: #f6b06a;
   --grayLight: #dddddd;
+  --gray: #80808055;
   --bgGray: #f6f6f6;
   --mainLight: #faf8f4;
 }
@@ -15,7 +17,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-main: var(--main);
-  --color-grayLight: var(--grayLight);
+  --color-mainBgLight: var(--mainBgLight);
+  --color-grayLight: var(--gray);
+  --color-gray: var(--grayLight);
   --color-bgGray: var(--bgGray);
   --color-mainLight: var(--mainLight);
 }
@@ -53,6 +57,9 @@ body {
   width: 100%;
 }
 
+/* .headerSearch {
+ } */
+
 .pageheader {
   background: url("../app/assets/shop-header.webp") top center;
 }
@@ -60,7 +67,7 @@ body {
 .hoverBtn {
   opacity: 0;
   bottom: -10px;
-  background: #ffffffc0;
+  background: var(--main);
   transition: all 0.5s;
 }
 

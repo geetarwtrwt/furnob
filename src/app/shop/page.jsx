@@ -10,7 +10,7 @@ export default function Page() {
 
   let filterData = fetauredProduct.filter(
     (e) =>
-      e.name.toLowerCase().includes(input.search.toLowerCase()) ||
+      e.productName.toLowerCase().includes(input.search.toLowerCase()) ||
       e.category.toLowerCase().includes(input.search.toLowerCase())
   );
   return (

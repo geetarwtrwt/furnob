@@ -19,8 +19,9 @@ export default function Page() {
   );
 
   let searchProduct = filtered.filter((e) => {
-    return e.name.toLowerCase().includes(input.search.toLowerCase());
+    return e.productName.toLowerCase().includes(input.search.toLowerCase());
   });
+  console.log(searchProduct);
   return (
     <>
       <section className="">

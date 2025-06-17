@@ -95,6 +95,7 @@ import pr_3 from "./pr-3.jpg";
 import press1 from "./press1.jpg";
 import press2 from "./press2.jpg";
 import press3 from "./press3.jpg";
+import profile_icon from "./profile_icon.png";
 import potSvg from "./pot.svg";
 import rook1 from "./rook1.jpg";
 import rook2 from "./rook2.jpg";
@@ -127,6 +128,7 @@ import trove3 from "./trove3.jpg";
 import walnut1 from "./walnut1.jpg";
 import walnut2 from "./walnut2.jpg";
 import walnut3 from "./walnut3.jpg";
+import upload_area from "./upload_area.png";
 
 export const assets = {
   logo,
@@ -226,6 +228,7 @@ export const assets = {
   press1,
   press2,
   press3,
+  profile_icon,
   potSvg,
   rook1,
   rook2,
@@ -258,6 +261,7 @@ export const assets = {
   walnut1,
   walnut2,
   walnut3,
+  upload_area,
 };
 
 export const categories = [
@@ -841,6 +845,19 @@ export const dummyOrders = [
         quantity: 1,
         _id: "67e258798f87e633667863f3",
       },
+    ],
+    amount: 43,
+    address: dummyAddress[0],
+    status: "Order Placed",
+    paymentType: "COD",
+    isPaid: false,
+    createdAt: "2025-03-25T07:17:13.068Z",
+    updatedAt: "2025-03-25T07:17:13.068Z",
+  },
+  {
+    _id: "67e258798f87e633667863f2",
+    userId: "67b5880e4d09769c5ca61644",
+    items: [
       {
         product: dummyProducts[1],
         quantity: 1,

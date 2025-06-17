@@ -1,6 +1,6 @@
-import Header from "@/app/component/Header";
-import Footer from "@/app/component/Footer";
 import { AppProvider } from "@/app/AppContext";
+import { ToastContainer } from "react-toastify";
+import LayoutClient from "@/app/LayoutClient";
 import { Jost } from "next/font/google";
 import "./globals.css";
 
@@ -19,9 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${jostSans.className} antialiased`}>
         <AppProvider>
-          <Header />
-          {children}
-          <Footer />
+          <ToastContainer autoClose={1500} position="top-center" />
+          <LayoutClient>{children}</LayoutClient>
         </AppProvider>
       </body>
     </html>
